@@ -3,7 +3,8 @@ const navbarNav = document.querySelector('.navbar-nav');
 
 //Hamburger Menu onclick 
 document.querySelector('#hamburger-menu').
-onclick = () => {
+onclick = (e) => {
+	e.preventDefault();
 	navbarNav.classList.toggle('active');
 };
 
